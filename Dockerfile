@@ -42,8 +42,8 @@ RUN { \
     echo '  if [[ $curtime -ge $timeend ]]; then'; \
     echo '    break'; \
     echo '  fi'; \
-    echo '  curmathfunction=$(echo $mathfunction | sed \'s/x/\'$COUNTER\'/g\')'; \
-    echo '  currentload=$(echo $curmathfunction | bc -l)'; \
+    echo "  curmathfunction=$(echo $mathfunction | sed 's/x/'$COUNTER\'/g')"; \
+    echo '  currentload=\$(echo $curmathfunction | bc -l)'; \
     echo '  COUNT=0'; \
     echo '  while true; do'; \
     echo '    curl -s "$target" > /dev/null &'; \
