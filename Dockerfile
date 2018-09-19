@@ -57,4 +57,4 @@ RUN { \
     echo 'done'; \
 } > /root/entry.sh && chmod +x /root/entry.sh
 
-ENTRYPOINT ["./root/entry.sh", "$FUNCTION", "$TIMESTART", "$TIMEEND", "$TIMESTEP", "$TARGET"]    
+ENTRYPOINT ./root/entry.sh "$FUNCTION" "$TIMESTART" "$TIMEEND" "$TIMESTEP" "$TARGET"
