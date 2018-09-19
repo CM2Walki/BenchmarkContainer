@@ -18,11 +18,11 @@ ENV TIMESTART=0 TIMEEND=2147483647 TIMESTEP=60 TARGET=1.2.3.4 FUNCTION="(-1)*(x 
 
 RUN { \
     echo '#!/bin/sh'; \
-    echo 'mathfunction=$FUNCTION'; \
-    echo 'timestart=$TIMESTART'; \
-    echo 'timeend=$TIMEEND'; \
-    echo 'timestep=$TIMESTEP'; \
-    echo 'target=$TARGET'; \
+    echo 'mathfunction=$1'; \
+    echo 'timestart=$2'; \
+    echo 'timeend=$3'; \
+    echo 'timestep=$4'; \
+    echo 'target=$5'; \
     echo ''; \
     echo '# Wait for initial time'; \
     echo 'while true; do'; \
@@ -59,4 +59,4 @@ RUN { \
     echo 'done'; \
 } > /root/entry.sh && chmod +x /root/entry.sh
 
-ENTRYPOINT ./root/entry.sh
+ENTRYPOINT ./root/entry.sh $FUNCTION $TIMESTART $TIMEEND $TIMESTEP $TARGET
