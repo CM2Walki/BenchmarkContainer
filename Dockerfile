@@ -17,8 +17,6 @@ RUN apk add curl bc
 ENV TIMESTART=0 TIMEEND=2147483647 TIMESTEP=60 TARGET=1.2.3.4 FUNCTION="(-1)*(x - 10)^2+100"
 
 RUN { \
-		echo '#!/bin/sh'; \
-		curl'; \
     echo '#!/bin/sh'; \
     echo 'mathfunction=$FUNCTION'; \
     echo 'timestart=$TIMESTART'; \
