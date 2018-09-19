@@ -57,6 +57,6 @@ RUN { \
     echo '  COUNTER=$((COUNTER+1))'; \
     echo '  sleep $timestep'; \
     echo 'done'; \
-} > /root/entry.sh
+} > /root/entry.sh && chmod +x /root/entry.sh
 
 ENTRYPOINT ./root/entry.sh
