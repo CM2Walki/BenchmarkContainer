@@ -15,4 +15,4 @@ TIMESTART=0 TIMEEND=2147483647 TIMESTEP=60 TARGET=1.2.3.4 FUNCTION="(-1)*(x-10)^
 Function (plot on the right): (-1)*(x-10)^2+100  
 Resulting requests per minute (graph on the left)  
 
-![Pattern Comparison](https://github.com/CM2Walki/BenchmarkContainer/blob/master/docs/metricDiag.png)
+![Pattern Comparison](https://raw.githubusercontent.com/CM2Walki/BenchmarkContainer/master/docs/metricDiag.png)
