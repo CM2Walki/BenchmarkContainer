@@ -1,5 +1,5 @@
 # HTTP Benchmark Container
-Container that replicates a traffic pattern based on a function passed to the container
+Container that replicates a traffic pattern based on a passed function.
 
 ## Environment Variables
 TIMESTART and TIMEEND in UNIX time  
