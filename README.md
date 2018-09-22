@@ -1,7 +1,7 @@
 # HTTP Benchmark Container
 Container that replicates a traffic pattern based on a passed function.
 
-### Environment Variables
+### Environment Variables:
 TIMESTART and TIMEEND in UNIX time  
 TIMESTEP in seconds as integer  
 TARGET as IPV4 or FQDN  
