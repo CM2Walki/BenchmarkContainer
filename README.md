@@ -2,9 +2,10 @@
 Container that replicates a traffic pattern based on a function passed to the container
 
 ## Environment Variables
-TIMESTART and TIMEEND in UNIX time 
+TIMESTART and TIMEEND in UNIX time
 TIMESTEP in seconds as integer
 TARGET as IPV4 or FQDN # FUNCTION has to be a valid function that can be calculated by bc -l
+
 #### https://www.gnu.org/software/bc/manual/html_chapter/bc_5.html
 
 #### Feel free to overwrite these environment variables, using -e (--env):
